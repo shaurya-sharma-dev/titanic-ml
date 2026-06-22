@@ -24,7 +24,7 @@ df
 "## Graphs"
 st.write(st.cache_data(get_age_distribution)(df))
 st.write(st.cache_data(get_age_fare_scatter)(df))
-st.write(st.cache_data(get_class_fare_scatter)(df))
+st.write(st.cache_resource(get_class_fare_scatter)(df))
 
 # Decision Tree
 get_clf_cached = st.cache_data(get_clf)
